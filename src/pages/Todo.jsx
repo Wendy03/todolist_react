@@ -129,8 +129,7 @@ const Todo = () => {
               onChange={(e) => setContent(e.target.value.trim())}
               onKeyDown={(e) => {
                 if (e.key === 'Enter') {
-                  setContent(e.target.value.trim());
-                  addTodo();
+                  addTodo(e);
                 }
               }}
             />
