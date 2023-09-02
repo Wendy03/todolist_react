@@ -30,7 +30,7 @@ const TodoList = ({
         })}
       </ul>
       <div className="todoList_statistics">
-        <p>{todos.filter((todo) => todo.status).length}個已完成項目</p>
+        <p>{todos.filter((todo) => !todo.status).length}個待完成項目</p>
         <a href="#" onClick={delAllTodo}>
           清除已完成項目
         </a>
